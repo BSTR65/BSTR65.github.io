@@ -2,10 +2,81 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   margin-top: 100px;
+  background-color: #fce4ec; /* Fondo de color rosa claro */
+}
+
+.container {
+  position: relative;
 }
 
 #mensaje {
   cursor: pointer;
-  color: blue;
-  font-size: 24px;
+  font-size: 32px; /* Tamaño de fuente más grande */
+  color: #ff6b6b; /* Color rosado oscuro */
+  padding: 20px; /* Espaciado interior para el texto */
+  background-color: #6b0000; /* Color de fondo rojo oscuro */
+  display: inline-block; /* Mostrar como bloque en línea */
+  border-radius: 10px; /* Borde redondeado */
+  position: relative; /* Posición relativa para que los pseudo-elementos estén posicionados correctamente */
 }
+
+#mensaje:hover {
+  color: #ff3860; /* Color de resaltado al pasar el mouse */
+}
+
+#mensaje::before,
+#mensaje::after {
+  content: "\2665"; /* Código de corazón */
+  font-size: 24px; /* Tamaño de corazón */
+  color: #ff6b6b; /* Color rosado oscuro */
+  position: absolute; /* Posición absoluta para que los corazones se posicionen correctamente */
+}
+
+#mensaje::before {
+  top: -10px; /* Posición del corazón arriba del recuadro */
+  left: -20px; /* Posición del corazón a la izquierda del recuadro */
+}
+
+#mensaje::after {
+  bottom: -10px; /* Posición del corazón abajo del recuadro */
+  right: -20px; /* Posición del corazón a la derecha del recuadro */
+}
+
+.corazon {
+  position: absolute;
+  font-size: 24px; /* Tamaño de los corazones */
+  color: #ff6b6b; /* Color rosado oscuro */
+}
+
+.corazon1 { top: 10%; left: 5%; }
+.corazon2 { top: 20%; left: 10%; }
+.corazon3 { top: 30%; left: 15%; }
+.corazon4 { top: 40%; left: 20%; }
+.corazon5 { top: 50%; left: 25%; }
+.corazon6 { top: 60%; left: 30%; }
+.corazon7 { top: 70%; left: 35%; }
+.corazon8 { top: 80%; left: 40%; }
+.corazon9 { top: 10%; left: 45%; }
+.corazon10 { top: 20%; left: 50%; }
+.corazon11 { top: 30%; left: 55%; }
+.corazon12 { top: 40%; left: 60%; }
+.corazon13 { top: 50%; left: 65%; }
+.corazon14 { top: 60%; left: 70%; }
+.corazon15 { top: 70%; left: 75%; }
+.corazon16 { top: 80%; left: 80%; }
+.corazon17 { top: 10%; left: 85%; }
+.corazon18 { top: 20%; left: 90%; }
+.corazon19 { top: 30%; left: 95%; }
+.corazon20 { bottom: 10%; left: 5%; }
+.corazon21 { bottom: 20%; left: 10%; }
+.corazon22 { bottom: 30%; left: 15%; }
+.corazon23 { bottom: 40%; left: 20%; }
+.corazon24 { bottom: 50%; left: 25%; }
+.corazon25 { bottom: 60%; left: 30%; }
+.corazon26 { bottom: 70%; left: 35%; }
+.corazon27 { bottom: 80%; left: 40%; }
+.corazon28 { bottom: 10%; left: 45%; }
+.corazon29 { bottom: 20%; left: 50%; }
+.corazon30 { bottom: 30%; left: 55%; }
+
+/* Ajusta las posiciones de los corazones según sea necesario */
