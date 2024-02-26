@@ -1,0 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#mensaje {
+  cursor: pointer;
+  color: blue;
+  font-size: 24px;
+}
